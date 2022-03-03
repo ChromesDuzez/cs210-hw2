@@ -1,8 +1,8 @@
 ﻿  Source.cpp
 C:\Users\Minec\OneDrive\Documents\College Work\Sophomore Year\Semester 2\CS 210-04\homework 2\hw-2\hw-binary-tree-no-impl\hw-binary-tree\BinarySearchTree.h(61): warning C4172: returning address of local variable or temporary
 C:\Users\Minec\OneDrive\Documents\College Work\Sophomore Year\Semester 2\CS 210-04\homework 2\hw-2\hw-binary-tree-no-impl\hw-binary-tree\BinarySearchTree.h(77): warning C4172: returning address of local variable or temporary
-C:\Users\Minec\OneDrive\Documents\College Work\Sophomore Year\Semester 2\CS 210-04\homework 2\hw-2\hw-binary-tree-no-impl\hw-binary-tree\BinarySearchTree.h(359): warning C4715: 'BinarySearchTree::find': not all control paths return a value
-C:\Users\Minec\OneDrive\Documents\College Work\Sophomore Year\Semester 2\CS 210-04\homework 2\hw-2\hw-binary-tree-no-impl\hw-binary-tree\BinarySearchTree.h(385): warning C4715: 'BinarySearchTree::getEmployee': not all control paths return a value
-C:\Users\Minec\OneDrive\Documents\College Work\Sophomore Year\Semester 2\CS 210-04\homework 2\hw-2\hw-binary-tree-no-impl\hw-binary-tree\BinarySearchTree.h(383): warning C4172: returning address of local variable or temporary
+C:\Users\Minec\OneDrive\Documents\College Work\Sophomore Year\Semester 2\CS 210-04\homework 2\hw-2\hw-binary-tree-no-impl\hw-binary-tree\BinarySearchTree.h(365): warning C4715: 'BinarySearchTree::find': not all control paths return a value
+C:\Users\Minec\OneDrive\Documents\College Work\Sophomore Year\Semester 2\CS 210-04\homework 2\hw-2\hw-binary-tree-no-impl\hw-binary-tree\BinarySearchTree.h(391): warning C4715: 'BinarySearchTree::getEmployee': not all control paths return a value
+C:\Users\Minec\OneDrive\Documents\College Work\Sophomore Year\Semester 2\CS 210-04\homework 2\hw-2\hw-binary-tree-no-impl\hw-binary-tree\BinarySearchTree.h(389): warning C4172: returning address of local variable or temporary
 C:\Users\Minec\OneDrive\Documents\College Work\Sophomore Year\Semester 2\CS 210-04\homework 2\hw-2\hw-binary-tree-no-impl\hw-binary-tree\stack.h(25): warning C4172: returning address of local variable or temporary: popped
   hw-binary-tree.vcxproj -> C:\Users\Minec\OneDrive\Documents\College Work\Sophomore Year\Semester 2\CS 210-04\homework 2\hw-2\hw-binary-tree-no-impl\x64\Debug\hw-binary-tree.exe

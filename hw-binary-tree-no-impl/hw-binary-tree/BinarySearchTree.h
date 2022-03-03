@@ -111,6 +111,15 @@ public:
         return false;
     }
 
+    /*
+    * public method for the getLevel method which returns what level a given id is on in the tree
+    * returns -1 if non-existant
+    */
+    int getLevel(const int id) const
+    {
+        return findLevel(id, root);
+    }
+
     /**
      * Make the tree logically empty.
      */
@@ -165,7 +174,7 @@ public:
                 stack.pop();
                 if(currentPos != nullptr)
                 {
-                    cout << endl << "Employee Name: " << currentPos->element.name << ", ID Number: " << currentPos->element.id << ", Employee Age: " << currentPos->element.age << ", Level: " << findLevel(currentPos->element.id, root);
+                    cout << endl << "Employee Name: " << currentPos->element.name << ", ID Number: " << currentPos->element.id << ", Employee Age: " << currentPos->element.age << ", Level: " << getLevel(currentPos->element.id);
                     currentPos = currentPos->right;
                 }
             }
@@ -291,30 +300,27 @@ private:
     {
         int counter = 0;
         BinaryNode* currentPos = t;
-        bool go = true;
-        if(currentPos != nullptr)
+        
+        while (true)
         {
-		    while (go)
-		    {
-                if (currentPos == nullptr)
-                {
-                    go = false;
-                }
-			    else if (currentPos->element.id == id)
-			    {
-                    go = false;
-			    }
-			    else if (currentPos->element.id > id)
-			    {
-				    currentPos = currentPos->left;
-				    counter++;
-			    }
-			    else if (currentPos->element.id < id)
-			    {
-				    currentPos = currentPos->right;
-				    counter++;
-			    }
-		    }
+            if (currentPos == nullptr)
+            {
+                return -1;
+            }
+            else if (currentPos->element.id == id)
+            {
+                break;
+            }
+            else if (currentPos->element.id > id)
+            {
+                currentPos = currentPos->left;
+                counter++;
+            }
+            else if (currentPos->element.id < id)
+            {
+                currentPos = currentPos->right;
+                counter++;
+            }
         }
 
         return counter;
