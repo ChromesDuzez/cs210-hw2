@@ -165,7 +165,7 @@ public:
                 stack.pop();
                 if(currentPos != nullptr)
                 {
-                    cout << endl << "Employee Name: " << currentPos->element.name << ", ID Number: " << currentPos->element.id << ", Employee Age: " << currentPos->element.age;
+                    cout << endl << "Employee Name: " << currentPos->element.name << ", ID Number: " << currentPos->element.id << ", Employee Age: " << currentPos->element.age << ", Level: " << findLevel(currentPos->element.id, root);
                     currentPos = currentPos->right;
                 }
             }
@@ -287,6 +287,38 @@ private:
         return currentPos;
     }
 
+    int findLevel(const int id, BinaryNode* t) const
+    {
+        int counter = 0;
+        BinaryNode* currentPos = t;
+        bool go = true;
+        if(currentPos != nullptr)
+        {
+		    while (go)
+		    {
+                if (currentPos == nullptr)
+                {
+                    go = false;
+                }
+			    else if (currentPos->element.id == id)
+			    {
+                    go = false;
+			    }
+			    else if (currentPos->element.id > id)
+			    {
+				    currentPos = currentPos->left;
+				    counter++;
+			    }
+			    else if (currentPos->element.id < id)
+			    {
+				    currentPos = currentPos->right;
+				    counter++;
+			    }
+		    }
+        }
+
+        return counter;
+    }
 
     /**
      * id is item to search for.
